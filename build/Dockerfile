@@ -15,7 +15,7 @@ COPY /src/package*.json ./
 RUN npm install --production --silent
 
 # Copy the rest of the project files to the workdir
-COPY src/package*.json ./
+COPY src/. .
 
 
 # Expose the application port (3000 for the Express server)
